@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -10,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="../../../assets/images/aws_load_balancer_icon.svg">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -19,25 +18,32 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.18ac144a.min.css">
-      
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.616af814.min.css">
-      
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6910b76c.min.css">
       
         
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.196e0c26.min.css">
         
-        <meta name="theme-color" content="#3f51b5">
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
       
     
+    <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
+
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
+    
+      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     
     
       
@@ -49,7 +55,10 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+      
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -66,41 +75,67 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="AWS LoadBalancer Controller" class="md-header-nav__button md-logo" aria-label="AWS LoadBalancer Controller">
       
+
+<header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid" aria-label="Header">
+        <a href="../../.." title="AWS LoadBalancer Controller" class="md-header-nav__button md-logo"
+            aria-label="AWS LoadBalancer Controller">
+            
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-    </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
-            AWS LoadBalancer Controller
-          </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </a>
+        <label class="md-header-nav__button md-icon" for="__drawer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+        </label>
+        <div class="md-header-nav__title" data-md-component="header-title">
             
-              Pod Readiness Gate
+            <div class="md-header-nav__ellipsis">
+                <span class="md-header-nav__topic md-ellipsis">
+                    AWS LoadBalancer Controller
+                </span>
+                <span class="md-header-nav__topic md-ellipsis">
+                    
+                    Pod Readiness Gate
+                    
+                </span>
+            </div>
             
-          </span>
         </div>
-      
+        <div id="version-select" class="mdc-select" data-base-url="../../..">
+    <div class="mdc-select__anchor" role="button">
+        <span class="mdc-select__ripple"></span>
+        <span class="mdc-select__selected-text-container">
+            <span class="mdc-select__selected-text"></span>
+        </span>
+        <span class="mdc-select__dropdown-icon">
+            <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false">
+                <polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd"
+                    points="7 10 12 15 17 10">
+                </polygon>
+                <polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd"
+                    points="7 15 12 10 17 15">
+                </polygon>
+            </svg>
+        </span>
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+
+    <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+        <ul class="mdc-list" role="listbox">
+        </ul>
+    </div>
+</div>
+        
+        <label class="md-header-nav__button md-icon" for="__search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        </label>
+        
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -121,10 +156,10 @@
     </div>
   </div>
 </div>
-    
-    
-      <div class="md-header-nav__source">
         
+        
+        <div class="md-header-nav__source">
+            
 <a href="https://github.com/kubernetes-sigs/aws-alb-ingress-controller/" title="Go to repository" class="md-source">
   <div class="md-source__icon md-icon">
     
@@ -134,14 +169,12 @@
     kubernetes-sigs/aws-alb-ingress-controller
   </div>
 </a>
-      </div>
-    
-  </nav>
+        </div>
+        
+    </nav>
 </header>
     
     <div class="md-container" data-md-component="container">
-      
-        
       
       
         
@@ -156,11 +189,24 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../.." class="md-tabs__link">
-        Home
-      </a>
     
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
   </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../../../install/installation/" class="md-tabs__link">
+        Install
+      </a>
+    </li>
+  
 
       
         
@@ -172,10 +218,12 @@
   
     <li class="md-tabs__item">
       
-        <a href="../installation/" class="md-tabs__link md-tabs__link--active">
-          Guide
-        </a>
       
+        
+      
+      <a href="../configurations/" class="md-tabs__link md-tabs__link--active">
+        Guide
+      </a>
     </li>
   
 
@@ -194,7 +242,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="AWS LoadBalancer Controller" class="md-nav__button md-logo" aria-label="AWS LoadBalancer Controller">
       
@@ -226,9 +276,58 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+    <a href="../../.." class="md-nav__link">
       Home
     </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Install
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Install" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Install
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../install/installation/" class="md-nav__link">
+      Add Controller
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configurations/" class="md-nav__link">
+      Configure
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -241,19 +340,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
       Guide
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Guide" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
         Guide
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -268,19 +362,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
-    
-    <label class="md-nav__link" for="nav-2-1">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    <label class="md-nav__link" for="nav-3-1">
       Controller
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Controller" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
         Controller
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -292,8 +381,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../installation/" title="Installation" class="md-nav__link">
-      Installation
+    <a href="../configurations/" class="md-nav__link">
+      Configure
     </a>
   </li>
 
@@ -304,19 +393,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../configurations/" title="Configurations" class="md-nav__link">
-      Configurations
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../subnet_discovery/" title="Subnet Discovery" class="md-nav__link">
+    <a href="../subnet_discovery/" class="md-nav__link">
       Subnet Discovery
     </a>
   </li>
@@ -338,12 +415,10 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Pod Readiness Gate
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Pod Readiness Gate" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Pod Readiness Gate
     </a>
     
@@ -355,9 +430,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -365,6 +438,27 @@
         <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-from-aws-alb-ingress-controller" class="md-nav__link">
+    Upgrading from AWS ALB Ingress controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disabling-the-readiness-gate-inject" class="md-nav__link">
+    Disabling the readiness gate inject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-pod-condition-status" class="md-nav__link">
+    Checking the pod condition status
   </a>
   
 </li>
@@ -388,19 +482,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
-    
-    <label class="md-nav__link" for="nav-2-2">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    <label class="md-nav__link" for="nav-3-2">
       Ingress
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Ingress" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
         Ingress
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -412,7 +501,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ingress/annotations/" title="Annotations" class="md-nav__link">
+    <a href="../../ingress/annotations/" class="md-nav__link">
       Annotations
     </a>
   </li>
@@ -424,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ingress/spec/" title="Spec" class="md-nav__link">
+    <a href="../../ingress/spec/" class="md-nav__link">
       Spec
     </a>
   </li>
@@ -436,7 +525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ingress/cert_discovery/" title="Certificate Discovery" class="md-nav__link">
+    <a href="../../ingress/cert_discovery/" class="md-nav__link">
       Certificate Discovery
     </a>
   </li>
@@ -454,19 +543,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
-    
-    <label class="md-nav__link" for="nav-2-3">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+    <label class="md-nav__link" for="nav-3-3">
       Service
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Service" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
         Service
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -478,7 +562,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../service/nlb_ip_mode/" title="NLB-IP mode" class="md-nav__link">
+    <a href="../../service/nlb_ip_mode/" class="md-nav__link">
       NLB-IP mode
     </a>
   </li>
@@ -490,7 +574,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../service/annotations/" title="Annotations" class="md-nav__link">
+    <a href="../../service/annotations/" class="md-nav__link">
       Annotations
     </a>
   </li>
@@ -508,19 +592,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
-    
-    <label class="md-nav__link" for="nav-2-4">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
+    <label class="md-nav__link" for="nav-3-4">
       TargetGroupBinding
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="TargetGroupBinding" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
         TargetGroupBinding
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -532,7 +611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../targetgroupbinding/targetgroupbinding/" title="TargetGroupBinding" class="md-nav__link">
+    <a href="../../targetgroupbinding/targetgroupbinding/" class="md-nav__link">
       TargetGroupBinding
     </a>
   </li>
@@ -544,7 +623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../targetgroupbinding/spec/" title="Spec" class="md-nav__link">
+    <a href="../../targetgroupbinding/spec/" class="md-nav__link">
       Spec
     </a>
   </li>
@@ -562,19 +641,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
-    
-    <label class="md-nav__link" for="nav-2-5">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
+    <label class="md-nav__link" for="nav-3-5">
       Tasks
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Tasks" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-5">
+        <span class="md-nav__icon md-icon"></span>
         Tasks
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -586,7 +660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tasks/cognito_authentication/" title="Cognito Authentication" class="md-nav__link">
+    <a href="../../tasks/cognito_authentication/" class="md-nav__link">
       Cognito Authentication
     </a>
   </li>
@@ -598,7 +672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tasks/ssl_redirect/" title="SSL Redirect" class="md-nav__link">
+    <a href="../../tasks/ssl_redirect/" class="md-nav__link">
       SSL Redirect
     </a>
   </li>
@@ -616,19 +690,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
-    
-    <label class="md-nav__link" for="nav-2-6">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" >
+    <label class="md-nav__link" for="nav-3-6">
       Walkthrough
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Walkthrough" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-6">
+        <span class="md-nav__icon md-icon"></span>
         Walkthrough
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -640,7 +709,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../walkthrough/echo_server/" title="EchoServer" class="md-nav__link">
+    <a href="../../walkthrough/echo_server/" class="md-nav__link">
       EchoServer
     </a>
   </li>
@@ -658,19 +727,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
-    
-    <label class="md-nav__link" for="nav-2-7">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" >
+    <label class="md-nav__link" for="nav-3-7">
       Upgrade
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Upgrade" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-7">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+      <label class="md-nav__title" for="nav-3-7">
+        <span class="md-nav__icon md-icon"></span>
         Upgrade
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -682,7 +746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../upgrade/migrate_v1_v2/" title="Migrate v1 to v2" class="md-nav__link">
+    <a href="../../upgrade/migrate_v1_v2/" class="md-nav__link">
       Migrate v1 to v2
     </a>
   </li>
@@ -716,9 +780,7 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -726,6 +788,27 @@
         <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-from-aws-alb-ingress-controller" class="md-nav__link">
+    Upgrading from AWS ALB Ingress controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disabling-the-readiness-gate-inject" class="md-nav__link">
+    Disabling the readiness gate inject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-pod-condition-status" class="md-nav__link">
+    Checking the pod condition status
   </a>
   
 </li>
@@ -745,9 +828,6 @@
                   <a href="https://github.com/kubernetes-sigs/aws-alb-ingress-controller/edit/master/docs/guide/controller/pod_readiness_gate.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
-                
-                
-                  
                 
                 
                 <h1 id="pod-readiness-gate">Pod readiness gate<a class="headerlink" href="#pod-readiness-gate" title="Permanent link">&para;</a></h1>
@@ -771,56 +851,54 @@ The load balancer controller will remove all legacy readiness-gate configuration
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <p>Pod readiness gate support is enabled by default on the AWS load balancer controller. You need to apply the readiness gate inject label to each of the namespace that you would
 like to use this feature. You can create and label a namespace as follows -</p>
-<p>```shell script
-$ kubectl create namespace readiness
-namespace/readiness created</p>
-<p>$ kubectl label namespace readiness elbv2.k8s.aws/pod-readiness-gate-inject=enabled
-namespace/readiness labeled</p>
-<p>$ kubectl describe namespace readiness
+<p><div class="highlight"><pre><span></span><code>$ kubectl create namespace readiness
+namespace/readiness created
+
+$ kubectl label namespace readiness elbv2.k8s.aws/pod-readiness-gate-inject=enabled
+namespace/readiness labeled
+
+$ kubectl describe namespace readiness
 Name:         readiness
 Labels:       elbv2.k8s.aws/pod-readiness-gate-inject=enabled
-Annotations:  <none>
+Annotations:  &lt;none&gt;
 Status:       Active
-<div class="highlight"><pre><span></span><code>Once labelled, the controller will add the pod readiness gates config to all the pods created subsequently that meet all the following conditions
-* There exists a service matching the pod labels in the same namespace
-* There exists at least one target group binding that refers to the matching service
-* The target type is IP
-
-The readiness gates have the prefix `target-health.elbv2.k8s.aws` and the controller injects the config to the pod spec only during pod creation.
-
-!!!tip &quot;create ingress or service before pod&quot;
-    To ensure all of your pods in a namespace get the readiness gate config, you need create your Ingress or Service and label the namespace before creating the pods
-
-## Upgrading from AWS ALB Ingress controller
-If you have a pod spec with the AWS ALB ingress controller (aka v1) style readiness-gate configuration, the controller will automatically remove the legacy readiness gates config and add new ones during pod creation if the pod namespace is labelled correctly. Other than the namespace labeling, no further configuration is necessary.
-The legacy readiness gates have the `target-health.alb.ingress.k8s.aws` prefix.
-
-## Disabling the readiness gate inject
-You can specify the controller flag `--enable-pod-readiness-gate-inject=false` during controller startup to disable the controller from modifying the pod spec.
-
-## Checking the pod condition status
-
-The status of the readiness gates can be verified with `kubectl get pod -o wide`:
 </code></pre></div>
-NAME                          READY   STATUS    RESTARTS   AGE   IP         NODE                       READINESS GATES
+Once labelled, the controller will add the pod readiness gates config to all the pods created subsequently that meet all the following conditions</p>
+<ul>
+<li>There exists a service matching the pod labels in the same namespace</li>
+<li>There exists at least one target group binding that refers to the matching service</li>
+<li>The target type is IP</li>
+</ul>
+<p>The readiness gates have the prefix <code>target-health.elbv2.k8s.aws</code> and the controller injects the config to the pod spec only during pod creation.</p>
+<div class="admonition tip">
+<p class="admonition-title">create ingress or service before pod</p>
+<p>To ensure all of your pods in a namespace get the readiness gate config, you need create your Ingress or Service and label the namespace before creating the pods</p>
+</div>
+<h2 id="upgrading-from-aws-alb-ingress-controller">Upgrading from AWS ALB Ingress controller<a class="headerlink" href="#upgrading-from-aws-alb-ingress-controller" title="Permanent link">&para;</a></h2>
+<p>If you have a pod spec with the AWS ALB ingress controller (aka v1) style readiness-gate configuration, the controller will automatically remove the legacy readiness gates config and add new ones during pod creation if the pod namespace is labelled correctly. Other than the namespace labeling, no further configuration is necessary.
+The legacy readiness gates have the <code>target-health.alb.ingress.k8s.aws</code> prefix.</p>
+<h2 id="disabling-the-readiness-gate-inject">Disabling the readiness gate inject<a class="headerlink" href="#disabling-the-readiness-gate-inject" title="Permanent link">&para;</a></h2>
+<p>You can specify the controller flag <code>--enable-pod-readiness-gate-inject=false</code> during controller startup to disable the controller from modifying the pod spec.</p>
+<h2 id="checking-the-pod-condition-status">Checking the pod condition status<a class="headerlink" href="#checking-the-pod-condition-status" title="Permanent link">&para;</a></h2>
+<p>The status of the readiness gates can be verified with <code>kubectl get pod -o wide</code>:
+<div class="highlight"><pre><span></span><code>NAME                          READY   STATUS    RESTARTS   AGE   IP         NODE                       READINESS GATES
 nginx-test-5744b9ff84-7ftl9   1/1     Running   0          81s   10.1.2.3   ip-10-1-2-3.ec2.internal   0/1
-<div class="highlight"><pre><span></span><code>When the target is registered and healthy in the ALB/NLB, the output will look like:
-</code></pre></div>
-NAME                          READY   STATUS    RESTARTS   AGE   IP         NODE                       READINESS GATES
-nginx-test-5744b9ff84-7ftl9   1/1     Running   0          81s   10.1.2.3   ip-10-1-2-3.ec2.internal   1/1
-<div class="highlight"><pre><span></span><code>If a readiness gate doesn&#39;t get ready, you can check the reason via:
-
-```console
-$ kubectl get pod nginx-test-545d8f4d89-l7rcl -o yaml | grep -B7 &#39;type: target-health&#39;
-status:
-  conditions:
-  - lastProbeTime: null
-    lastTransitionTime: null
-    message: Initial health checks in progress
-    reason: Elb.InitialHealthChecking
-    status: &quot;True&quot;
-    type: target-health.elbv2.k8s.aws/k8s-readines-perf1000-7848e5026b
 </code></pre></div></p>
+<p>When the target is registered and healthy in the ALB/NLB, the output will look like:
+<div class="highlight"><pre><span></span><code>NAME                          READY   STATUS    RESTARTS   AGE   IP         NODE                       READINESS GATES
+nginx-test-5744b9ff84-7ftl9   1/1     Running   0          81s   10.1.2.3   ip-10-1-2-3.ec2.internal   1/1
+</code></pre></div></p>
+<p>If a readiness gate doesn't get ready, you can check the reason via:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> kubectl get pod nginx-test-545d8f4d89-l7rcl -o yaml <span class="p">|</span> grep -B7 <span class="s1">&#39;type: target-health&#39;</span>
+<span class="go">status:</span>
+<span class="go">  conditions:</span>
+<span class="go">  - lastProbeTime: null</span>
+<span class="go">    lastTransitionTime: null</span>
+<span class="go">    message: Initial health checks in progress</span>
+<span class="go">    reason: Elb.InitialHealthChecking</span>
+<span class="go">    status: &quot;True&quot;</span>
+<span class="go">    type: target-health.elbv2.k8s.aws/k8s-readines-perf1000-7848e5026b</span>
+</code></pre></div>
                 
               
               
@@ -839,7 +917,7 @@ status:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../subnet_discovery/" title="Subnet Discovery" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../subnet_discovery/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -854,7 +932,7 @@ status:
           </a>
         
         
-          <a href="../../ingress/annotations/" title="Annotations" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../ingress/annotations/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -887,19 +965,24 @@ status:
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+    
+      <script src="../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
-          features: ["tabs"],
+          features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      
     
+    <script src="../../../assets/javascripts/version-select.js"></script>
+
   </body>
 </html>
